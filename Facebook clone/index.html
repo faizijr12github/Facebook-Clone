@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="index.js" defer></script>
+    <title>Facebook</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="nav-left">
+            <img src="fb-logo.png" alt="logo" class="nav-logo">
+            <ul>
+                <li><i class="bi bi-bell-fill"></i></li>
+                <li><i class="bi bi-chat-dots-fill"></i></li>
+                <li><i class="bi bi-camera-video-fill"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon" onclick="settingMenuToggle()">
+                <img src="user.jpeg" alt="">
+                <span class="status-dot"></span>
+            </div>
+        </div>
+        <!-- Setting menu -->
+        <div class="setting-menu">
+            <div id="dark_btn">
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="user.jpeg" alt="user">
+                    <div>
+                        <p>Muhammad Faizan</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <i class="bi bi-envelope-exclamation-fill" id="give_fedback"></i>
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design!</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sett-links">
+                    <i class="bi bi-gear-fill"></i>
+                    <a href="#">Settings & Privacy<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+                <div class="sett-links">
+                    <i class="bi bi-question-circle"></i>
+                    <a href="#">Help & Support<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+                <div class="sett-links">
+                    <i class="bi bi-moon-fill"></i>
+                    <a href="#">Display & Accessibility<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+                <div class="sett-links">
+                    <i class="bi bi-door-closed-fill"></i>
+                    <a href="#">Logout<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- container -->
+    <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href=""><i class="bi bi-newspaper"></i> Latest News</a>
+                <a href=""><i class="bi bi-person-heart"></i> Friends</a>
+                <a href=""><i class="bi bi-people-fill"></i> Groups</a>
+                <a href=""><i class="bi bi-cart-fill"></i> Marketplace</a>
+                <a href=""><i class="bi bi-collection-play-fill"></i> Watch</a>
+                <a href="">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><i class="bi bi-filetype-html"></i>Web Developers</a>
+                <a href="#"><i class="bi bi-filetype-psd"></i>Web Design course</a>
+                <a href="#"><i class="bi bi-laptop-fill"></i>Web Experts</a>
+                <a href="#"><i class="bi bi-file-code-fill"></i>Full Stack Development</a>
+            </div>
+        </div>
+
+        <!-- main-content -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story mystory">
+                    <img src="add-post.png" alt="add-post">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story1">
+                    <img src="user-1.jpg" alt="add-post">
+                    <p>Mirha</p>
+                </div>
+                <div class="story story2">
+                    <img src="user-2.jpg" alt="add-post">
+                    <p>Bilal</p>
+                </div>
+                <div class="story story3">
+                    <img src="user-3.jpg" alt="add-post">
+                    <p>Ahsan</p>
+                </div>
+                <div class="story story4">
+                    <img src="user-4.jpg" alt="add-post">
+                    <p>Waleed</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="user.jpeg" alt="user">
+                    <div>
+                        <p>Muhammad Faizan</p>
+                        <small>Public <i class="bi bi-caret-down-fill"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind Faizan?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><i class="bi bi-camera-reels-fill" style="color:red"></i>Live Vedio</a>
+                        <a href="#"><i class="bi bi-camera-fill" style="color:greenyellow"></i>Photo/Vedio</a>
+                        <a href="#"><i class="bi bi-emoji-smile-fill" style="color:yellow"></i>Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="user.jpeg" alt="user">
+                        <div>
+                            <p>Muhammad Faizan</p>
+                            <span>June 10 2023, 3:50 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                <p class="post-text">The biggest collaboration of the year is here. Watch the official music video of
+                    <span>'TUM TUM'</span> starring Asim Azhar, Shamoon Ismail, Talha Anjum, Talhah Yunus, Raamis,
+                    Areeka Haq, Hania Aamir, Asad Siddiqui & Mooroo. <a
+                        href="https://www.youtube.com/watch?v=iqrVb6InPcE" target="_blank">Listen Now!</a>
+                </p>
+                <img src="my-post.jpg" alt="post" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill" style="color:#1876f2"></i>120</div>
+                        <div><i class="bi bi-chat-fill"></i>45</div>
+                        <div><i class="bi bi-send-fill"></i>20</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="user.jpeg" alt="user"><i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="user-1.jpg" alt="user">
+                        <div>
+                            <p>Mirha</p>
+                            <span>June 10 2023, 3:50 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                <p class="post-text">As they stroll through cobblestone streets, the girl and her cat pause to take in
+                    the colorful tapestry of life unfolding around them. The soft purring of her feline companion serves
+                    as a soothing melody, drawing smiles from passersby who are enchanted by this charming duo.</p>
+                <img src="story-1.jpg" alt="post" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i>120</div>
+                        <div><i class="bi bi-chat-fill"></i>45</div>
+                        <div><i class="bi bi-send-fill"></i>20</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="user-1.jpg" alt="user"><i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="user-2.jpg" alt="user">
+                        <div>
+                            <p>Bilal</p>
+                            <span>June 10 2023, 3:50 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                <p class="post-text">With my fingers dancing across the keyboard, I immerse myself in the digital
+                    landscape. From crafting compelling content to crunching numbers and strategizing, my laptop is my
+                    gateway to productivity.</p>
+                <img src="story-2.jpg" alt="post" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i>120</div>
+                        <div><i class="bi bi-chat-fill"></i>45</div>
+                        <div><i class="bi bi-send-fill"></i>20</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="user-2.jpg" alt="user"><i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="user-3.jpg" alt="user">
+                        <div>
+                            <p>Ahsan</p>
+                            <span>June 10 2023, 3:50 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                <p class="post-text">We are trending on youtue <a href="https://www.youtube.com/watch?v=IFMSNfkvRUM">Listen Now!!!</a></p>
+                <img src="post-3-img.jpg" alt="post" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i>120</div>
+                        <div><i class="bi bi-chat-fill"></i>45</div>
+                        <div><i class="bi bi-send-fill"></i>20</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="user-3.jpg" alt="user"><i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="user-4.jpg" alt="user">
+                        <div>
+                            <p>Waleed</p>
+                            <span>June 10 2023, 3:50 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                </div>
+                <p class="post-text">With my fingers dancing across the keyboard, I immerse myself in the digital
+                    landscape. From crafting compelling content to crunching numbers and strategizing, my laptop is my
+                    gateway to productivity.</p>
+                <img src="story-4.jpg" alt="post" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up-fill"></i>120</div>
+                        <div><i class="bi bi-chat-fill"></i>45</div>
+                        <div><i class="bi bi-send-fill"></i>20</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="user-4.jpg" alt="user"><i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h3>Social Media</h3>
+                    <p><i class="bi bi-geo-alt-fill"></i> Wilson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h3>Mobile Marketing</h3>
+                    <p><i class="bi bi-geo-alt-fill"></i> Wilson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="advertisement.jpg" alt="advertisement" class="advertisement">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="user-1.jpg" alt="user-1">
+                    <span class="online-dot"></span>
+                    <p>Mirha</p>
+                </div>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="user-2.jpg" alt="user-2">
+                    <span class="online-dot"></span>
+                    <p>Bilal</p>
+                </div>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="user-3.jpg" alt="user-3">
+                    <span class="online-dot"></span>
+                    <p>Ahsan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© All rights reserved. This Facebook page is not affiliated with or endorsed by Facebook.</p>
+    </div>
+
+
+</body>
+
+</html>
